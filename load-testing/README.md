@@ -7,13 +7,18 @@ Ensure that the necessary infrastructure has already been set up and installed a
 # Project Structure
 
 ```bash
-└── chaos-testing
-    ├── chaos-experiment-manifests
-    │   ├── chaos-cpu-stress-manifests
-    │   ├── chaos-mem-stress-manifests
-    │   └── chaos-pod-failure-manifests
-    └── chaos-verification.py
+└── load-testing
+    ├── audio
+    ├── constants.js
+    └── script.js
 ```
+
+`script.js` is the load testing suite to be run by `k6`
+
+`constants.js` contains a list of variables used by `script.js`
+
+`audio/` is a directory of audio files used by `script.js`
+
 
 # Running the load test
 
