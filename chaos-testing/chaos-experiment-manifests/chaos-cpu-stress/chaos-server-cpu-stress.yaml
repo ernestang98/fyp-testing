@@ -1,0 +1,16 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: StressChaos
+metadata:
+  name: inject-cpu-stress-into-server-pod
+  namespace: asr-engine
+spec:
+  mode: one
+  selector:
+    namespaces:
+      - asr-engine
+    labelSelectors:
+      "server.service": "decoding-sdk-server"
+  stressors:
+    cpu:
+      workers: 20
+      load: 100

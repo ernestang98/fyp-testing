@@ -1,0 +1,15 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  name: inject-chaos-into-server-pod
+  namespace: asr-engine
+spec:
+  selector:
+    namespaces:
+      - asr-engine
+    labelSelectors:
+      "server.service": "decoding-sdk-server"
+  mode: one
+  action: pod-failure
+  duration: 121s
+  gracePeriod: 0
