@@ -10,7 +10,7 @@ This repository contains the list of resources required for running the three ty
 
 Ensure that the necessary infrastructure has already been set up and installed as followed in [fyp-infra](https://github.com/ernestang98/fyp-infra).
 
-# Project Structure
+<!-- # Project Structure
 
 ```bash
 ├── chaos-testing
@@ -24,4 +24,4 @@ Ensure that the necessary infrastructure has already been set up and installed a
     ├── semgreo-manifests
     ├── defect-dojo-send-report.py
     └── sca-owasp-dependency-check.sh
-```
+``` -->
